@@ -11,6 +11,12 @@ namespace Vidly.Controllers
 {
     public class MoviesController : Controller
     {
+        readonly List<Movie> _movies = new List<Movie>
+            {
+                new Movie{ Name = "Shrek!", Id = 1},
+                new Movie{Name = "Wall-e", Id = 2}
+                
+            };
         // GET: Movies
         //public ActionResult Random()
         //{
@@ -20,9 +26,9 @@ namespace Vidly.Controllers
 
         public ActionResult Random()
         {
-            var movie = new Movie { Name = "Shrek!" };
+            
 
-            ViewData["Movie"] = movie;
+            //ViewData["Movie"] = _movie;
 
             var customers = new List<Customer>
             {
@@ -32,7 +38,7 @@ namespace Vidly.Controllers
 
             var rndViewModel = new RandomMovieViewModel
             {
-                Movie = movie,
+                Movies = _movies,
                 Customers = customers
             };
 
@@ -44,16 +50,32 @@ namespace Vidly.Controllers
             return Content("Id= " + id);
         }
 
-        public ActionResult Index(int? pageIndex, string sortBy)
+        //public ActionResult Index(int? pageIndex, string sortBy)
+        //{
+
+        //    if (!pageIndex.HasValue)
+        //        pageIndex = 1;
+
+        //    if (string.IsNullOrWhiteSpace(sortBy))
+        //        sortBy = "Name";
+
+        //    return Content(string.Format("pageIndex={0}, sortBy={1}", pageIndex, sortBy));
+        //}
+
+
+        public ActionResult Index()
         {
+            var movies = new ViewModels.RandomMovieViewModel {Movies = _movies};
 
-            if (!pageIndex.HasValue)
-                pageIndex = 1;
+            return View(movies);
+        }
 
-            if (string.IsNullOrWhiteSpace(sortBy))
-                sortBy = "Name";
+        public ActionResult Details(int? id)
+        {
+            Movie cst = _movies.FirstOrDefault(c => c.Id == id) ??
+                           new Movie { Name = "Sorry, there is no movie with this " + id + " id" };
 
-            return Content(string.Format("pageIndex={0}, sortBy={1}", pageIndex, sortBy));
+            return View(cst);
         }
 
         [Route("movies/released/{year:regex(\\d{4})}/{month:regex(\\d{2}):range(1, 12)}")]
