@@ -186,6 +186,18 @@
     <Compile Include="Migrations\201710041849358_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201710041849358_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710051837130_CreateMoviesTable.cs" />
+    <Compile Include="Migrations\201710051837130_CreateMoviesTable.Designer.cs">
+      <DependentUpon>201710051837130_CreateMoviesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710052217035_MembershipName.cs" />
+    <Compile Include="Migrations\201710052217035_MembershipName.Designer.cs">
+      <DependentUpon>201710052217035_MembershipName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710052218465_PopulateMembershipName.cs" />
+    <Compile Include="Migrations\201710052218465_PopulateMembershipName.Designer.cs">
+      <DependentUpon>201710052218465_PopulateMembershipName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -286,6 +298,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710041849358_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201710041849358_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710051837130_CreateMoviesTable.resx">
+      <DependentUpon>201710051837130_CreateMoviesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710052217035_MembershipName.resx">
+      <DependentUpon>201710052217035_MembershipName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710052218465_PopulateMembershipName.resx">
+      <DependentUpon>201710052218465_PopulateMembershipName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

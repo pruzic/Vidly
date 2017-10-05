@@ -59,3 +59,6 @@ C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.pdb
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.CreateMoviesTable.resources
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.MembershipName.resources
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipName.resources
