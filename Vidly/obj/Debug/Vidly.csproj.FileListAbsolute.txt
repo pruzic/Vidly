@@ -63,3 +63,6 @@ C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.CreateMoviesTable.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.MembershipName.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipName.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.CustomerBirthDate.resources
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddGenreTable.resources
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenre.resources
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMovies.resources

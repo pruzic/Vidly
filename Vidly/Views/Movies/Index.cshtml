@@ -1,4 +1,4 @@
-﻿@model Vidly.ViewModels.RandomMovieViewModel
+﻿@model IEnumerable<Vidly.Models.Movie>
 
 @{
     ViewBag.Title = "Movies";
@@ -7,20 +7,24 @@
 
 <h2><b>Movies</b></h2>
 
-@if (Model.Movies.Count > 0)
+@if (Model.Any())
 {
-    <table class="table table-bordered">
+    <table class="table table-bordered table-hover">
         <thead>
-            <tr><th>Movie</th></tr>
+        <tr>
+            <th>Movie</th>
+            <th>Genre</th>
+        </tr>
         </thead>
         <tbody>
 
-            @foreach (var cst in Model.Movies)
+            @foreach (var movie in Model)
             {
                 <tr>
                     <td>
-                        @Html.ActionLink(cst.Name, "Details", new { id = cst.Id })
+                        @Html.ActionLink(movie.Name, "Details", new {id = movie.Id})
                     </td>
+                    <td>@movie.Genre.Name</td>
                 </tr>
             }
 
