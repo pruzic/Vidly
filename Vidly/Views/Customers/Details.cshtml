@@ -6,7 +6,26 @@ ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+
+<h1>@Model.Name</h1>
 
 
-    <h1>@Model.Name</h1>
+    <ul>
+    @if (!string.IsNullOrEmpty(Model.MembershipType.Name))
+    {
+        <li>
+            
+                Membership Type: @Model.MembershipType.Name
+            
+        </li>
+    }
+
+    @if (Model.BirthDate.HasValue)
+    {
+        <li>
+           BirthDay: @Model.BirthDate.Value.ToShortDateString()
+        </li>
+    }
+
+</ul>
+

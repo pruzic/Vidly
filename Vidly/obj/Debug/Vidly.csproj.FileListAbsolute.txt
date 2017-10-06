@@ -62,3 +62,4 @@ C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.r
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.CreateMoviesTable.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.MembershipName.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipName.resources
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.CustomerBirthDate.resources
