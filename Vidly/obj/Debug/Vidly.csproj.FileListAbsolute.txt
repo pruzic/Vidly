@@ -54,10 +54,6 @@ C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.InitialModel.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.IsSubscribedToCustomer.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.MembershipType.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
-C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.Cache
-C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.dll
-C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.pdb
-C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.CreateMoviesTable.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.MembershipName.resources
@@ -66,3 +62,7 @@ C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.CustomerBirthDate.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddGenreTable.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenre.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMovies.resources
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.Cache
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.dll
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.pdb
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache

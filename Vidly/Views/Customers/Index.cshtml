@@ -1,4 +1,5 @@
 ﻿
+@using Vidly.Controllers
 @model IEnumerable<Vidly.Models.Customer>
 
 @{
@@ -24,7 +25,7 @@
             {
                 <tr>
                     <td>
-                        @Html.ActionLink(customer.Name, "Details", new {customer.Id})
+                        @Html.ActionLink(customer.Name, "Edit", new {id = customer.Id})
                     </td>
                     <td>@customer.MembershipType.Name</td>
                 </tr>
