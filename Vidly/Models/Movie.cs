@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Web;
 
 namespace Vidly.Models
@@ -14,8 +15,17 @@ namespace Vidly.Models
         public string Name { get; set; }
 
         public Genre Genre { get; set; }
+
+        [Display(Name = "Release Date")]
         public DateTime ReleaseDate { get; set; }
+
+        [Display(Name = "Date Added")]
         public DateTime DateAdded { get; set; }
+
+        [Display(Name = "Number in Stock")]
         public int NumberInStock { get; set; }
+
+        [Required]
+        public int GenreId { get; set; }
     }
 }

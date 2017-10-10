@@ -1,4 +1,5 @@
-﻿@model Vidly.Models.Movie
+﻿
+@model Vidly.Models.Movie
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -19,3 +20,9 @@
     <li>Number in Stock: @Model.NumberInStock</li>
 
 </ul>
+
+@using (Html.BeginForm("Edit", "Movies"))
+{
+    @Html.HiddenFor(m => Model.Id)
+    <button class="btn btn-primary">Edit Movie</button>
+}

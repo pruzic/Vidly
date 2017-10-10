@@ -214,6 +214,14 @@
     <Compile Include="Migrations\201710061427402_PopulateMovies.Designer.cs">
       <DependentUpon>201710061427402_PopulateMovies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710091632219_AddGenreIdToMovie.cs" />
+    <Compile Include="Migrations\201710091632219_AddGenreIdToMovie.Designer.cs">
+      <DependentUpon>201710091632219_AddGenreIdToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710091637553_SetNotNullToGenreIdInMovies.cs" />
+    <Compile Include="Migrations\201710091637553_SetNotNullToGenreIdInMovies.Designer.cs">
+      <DependentUpon>201710091637553_SetNotNullToGenreIdInMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -221,10 +229,12 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsIfMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -291,6 +301,7 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -338,6 +349,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710061427402_PopulateMovies.resx">
       <DependentUpon>201710061427402_PopulateMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710091632219_AddGenreIdToMovie.resx">
+      <DependentUpon>201710091632219_AddGenreIdToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710091637553_SetNotNullToGenreIdInMovies.resx">
+      <DependentUpon>201710091637553_SetNotNullToGenreIdInMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
