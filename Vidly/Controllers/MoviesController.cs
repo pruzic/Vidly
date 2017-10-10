@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
+using System.Web.DynamicData;
 using Microsoft.Ajax.Utilities;
 using Vidly.Models;
 using Vidly.ViewModels;
@@ -99,10 +100,10 @@ namespace Vidly.Controllers
        public ActionResult New()
        {
            var genre = _context.Genres.ToList();
-
            var movieViewModel = new MovieFormViewModel
            {
                Genres = genre
+               
            };
 
            return View("MovieForm", movieViewModel);
@@ -110,8 +111,21 @@ namespace Vidly.Controllers
 
 
        [HttpPost]
+       [ValidateAntiForgeryToken]
        public ActionResult Save(Movie movie)
        {
+           if (!ModelState.IsValid)
+           {
+               var genre = _context.Genres.ToList();
+
+               var movieVieModel = new MovieFormViewModel(movie)
+               {
+                   Genres = genre
+               };
+
+               return View("MovieForm", movieVieModel);
+           }
+
            if (movie.Id == 0)
            {
                _context.Movies.Add(movie);
@@ -135,15 +149,15 @@ namespace Vidly.Controllers
 
         public ActionResult Edit(int id)
         {
-            var movieInDb = _context.Movies.Single(m => m.Id == id);
-            if (movieInDb == null)
+            var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
+            if (movie == null)
                 return HttpNotFound("Movie with Id: " + id + " could not be found!");
 
 
-            var movieViewModel = new MovieFormViewModel
+            var movieViewModel = new MovieFormViewModel(movie)
             {
-                Genres = _context.Genres.ToList(),
-                Movie = movieInDb
+                Genres = _context.Genres.ToList()
+                
             };
 
 
