@@ -30,10 +30,10 @@ namespace Vidly.Controllers
         {
 
             //var viewModel = new RandomMovieViewModel {Customers = _context.Customers};
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+            //var customers = _context.Customers.Include(c => c.MembershipType).ToList();
 
 
-            return View(customers);
+            return View();
         }
 
         public ActionResult Details(int? id)

@@ -15,6 +15,7 @@ namespace Vidly.App_Start
         {
             Mapper.CreateMap<Customer, CustomerDto>();
             Mapper.CreateMap<CustomerDto, Customer>(); //Might Need to add in future if error on update is thrown -> .ForMember(c => c.Id, opt => opt.Ignore());
+            Mapper.CreateMap<MembershipType, MembershipTypeDto>();
 
             Mapper.CreateMap<Movie, MovieDto>(); //Might Need to add in future if error on update is thrown -> .ForMember(c => c.Id, opt => opt.Ignore());
             Mapper.CreateMap<MovieDto, Movie>();
