@@ -75,4 +75,3 @@ C:\Udemy\Vidly\Vidly\bin\System.Web.Http.xml
 C:\Udemy\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
 C:\Udemy\Vidly\Vidly\bin\AutoMapper.dll
 C:\Udemy\Vidly\Vidly\bin\AutoMapper.xml
-C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache
