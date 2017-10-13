@@ -30,6 +30,7 @@ namespace Vidly.Models
         public int NumberInStock { get; set; }
 
         [Required]
+        [Display(Name = "Genre")]
         public int GenreId { get; set; }
     }
 }
