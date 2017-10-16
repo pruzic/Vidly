@@ -1,5 +1,4 @@
-﻿@*@model IEnumerable<Vidly.Models.Movie>*@
-
+﻿
 @{
     ViewBag.Title = "Movies";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,12 +6,9 @@
 
 <h2><b>Movies</b></h2>
 
-@using (Html.BeginForm("New", "Movies"))
-{
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">New Movie</button>
-    </div>
-}
+<p>
+    @Html.ActionLink("New Movie", "New", "Movies", null, new{@class="btn btn-primary"})
+</p>
 
     <table id="movies" class="table table-bordered table-hover">
         <thead>
