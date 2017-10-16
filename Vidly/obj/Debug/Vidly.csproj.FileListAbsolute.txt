@@ -77,5 +77,4 @@ C:\Udemy\Vidly\Vidly\bin\AutoMapper.dll
 C:\Udemy\Vidly\Vidly\bin\AutoMapper.xml
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToApplicaitonUser.resources
-C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddPhoneNumberToApplicationUser.resources
