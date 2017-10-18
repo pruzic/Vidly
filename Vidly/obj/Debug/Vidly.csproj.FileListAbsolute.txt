@@ -78,3 +78,11 @@ C:\Udemy\Vidly\Vidly\bin\AutoMapper.xml
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToApplicaitonUser.resources
 C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddPhoneNumberToApplicationUser.resources
+C:\Udemy\Vidly\Vidly\bin\Glimpse.Ado.dll
+C:\Udemy\Vidly\Vidly\bin\Glimpse.AspNet.dll
+C:\Udemy\Vidly\Vidly\bin\Glimpse.Core.dll
+C:\Udemy\Vidly\Vidly\bin\Glimpse.EF6.dll
+C:\Udemy\Vidly\Vidly\bin\Glimpse.Mvc5.dll
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddRentalClass.resources
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddNumberAvailabiltyToMovie.resources
+C:\Udemy\Vidly\Vidly\obj\Debug\Vidly.csprojResolveAssemblyReference.cache
