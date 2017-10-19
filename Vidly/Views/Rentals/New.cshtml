@@ -18,7 +18,7 @@
     <div class="form-group">
         <label>Movie</label>
         <div class="tt-container">
-            <input id="movie" name="movie" data-rule-validMovie="true" required type="text" value="" class="form-control" />
+            <input id="movie" name="movie" data-rule-atLeastOneMove="true" type="text" value="" class="form-control" />
         </div>
 
     </div>
@@ -94,6 +94,8 @@
                 $("#movie").typeahead("val", "");
 
                 vm.movieIds.push(movie.id);
+
+                console.log("Number of movies: " + vm.movieIds[0]);
             }); //End of customer auto complition
 
             $.validator.addMethod("validCustomer", function() {
@@ -102,11 +104,10 @@
 
             $.validator.addMethod("atLeastOneMove", function () {
                 return vm.movieIds.length > 0;
-            }, "Please select valid movie.");
+            }, "Please select at least one movie.");
 
            var validator =  $("#newRental").validate({
                 submitHandler: function() {
-                    e.preventDefault();
 
                     $.ajax({
                         url: "/api/newRentals",
